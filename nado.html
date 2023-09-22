@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Aurus">
+  <meta name="description" content="Вейп шоп">
+  <meta name="keywords" content="VAPE, Shop, Вейп, под, Жижка, жидкости, ММА, секция по ММА, комплектующие, испарители">
+	<title>PARADISE</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#9f00a7">
+  <meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="kod.css">
+</head>
+<body>
+  <header>
+  	<div id="logo" onclick="slowScroll('#top')">
+  	  <span>PAR<font color="red">A</font>DISE</span>
+  	  <span class="up">VAPE SHOP</span>
+  	</div>
+  	<div id="about">
+  	  <a href="#" title="Вейпы" onclick="slowScroll('#IMG')">Вейпы и испарители</a>
+  	  <a href="#" title="Жидкости" onclick="slowScroll('#VaPe')">Жидкости</a>
+  	  <a href="#" title="Контакты"onclick="slowScroll('#contact')">Контакты</a>
+  	  <a href="#" title="FAQ"onclick="slowScroll('#qqq')">FAQ</a>
+  	</div>
+  </header>
+  <div id="top">
+  	<h1>Большой ассортимент</h1>
+  	<h3>покупай только у нас</h3>
+  </div>
+
+  <div id="main">
+  	<div class="intro">
+  		<h2>Мы поможем вам подобрать лучший вкус!</h2>
+  		<span>Большой выбор всего, что может пригодиться</span>
+  	</div>
+  	<div class="text">
+  		<span>Электронные сигареты - лучшее, что может иметь у себя каждый школьник СНГ стран. Мы предлагаем товар, а вы за него платите и
+  		через некоторое время наш курьер доставит его вам домой</span>
+  	</div>
+  </div>
+  <div id="overview">
+  	<h2>Выбирай свой товар</h2>
+  	<h1 id="VaPe">С нами жизнь лучше</h1>
+  	<div class="img" id="IMG">
+  		<img src="https://sun9-72.userapi.com/impf/c637219/v637219275/1d9cf/WAnO_ME9VeA.jpg?size=1046x703&quality=96&sign=c5a5a518eb3f9c01cc7d666bf7301569&c_uniq_tag=Ndc-JHH1WvRS4khhaTcIq8i9d_8XzO1l0iUHMvXnsRU&type=album" alt="Жидкости">
+  	  <span>Жидкости</span>
+  	</div>
+  	<div class="img">
+  	  <img src="https://smokejeen.com/images/blog/17/3fe87470fe0ac9ff523a97b4efd5998e-scaled.jpg" alt="Испарители и батарейки">
+  	  <span>Испарители и батарейки</span>
+  	</div>
+  	<div class="img" id="qqq">
+  		<img src="https://vapingdaily.com/wp-content/uploads/2018/05/shutterstock_747000163-min-1.jpg" alt="Вейпы и комплектующие">
+  	  <span>Вейпы и комплектующие</span>
+  	</div>
+  	<div class="img">
+  	  <img src="https://sportishka.com/uploads/posts/2022-11/1667677303_58-sportishka-com-p-vse-boitsi-mma-krasivo-59.jpg" alt="Записаться на ММА">
+  	  <span>Записаться на ММА</span>
+  	</div>
+
+  <div id="cont">
+    <center><h5>Тех Поддержка</h5></center>
+    <form id="form_i">
+      <label for="name">Имя Фамилия <font color="red">*</font></label><br>
+      <input type="text" placeholder="Введите Имя Фамилию" name="name" id="name"><br>
+      <label for="email">Ваша почта <font color="red">*</font></label><br>
+      <input type="email" placeholder="Введите email" name="email" id="email"><br>
+      <label for="message">Сообщение <font color="red">*</font></label><br>
+      <textarea placeholder="Введите ваше сообщение" name="message" id="mes"></textarea><br>
+      <input id="m_s" class="but" input type="submit"></input>
+    </form>
+  </div>
+  </div>
+  <main>
+    <article><h3>Тут могла быть ваша реклама :)</h3><br></article>
+    <footer id="foot">
+      <div id="contact">
+        <video src="img/video.mp4" controls></video>
+      </div>
+    </footer>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  	function slowScroll(id) {
+  		$('html, body').animate({
+  		  scrollTop: $(id).offset().top
+  		}, 300);
+  	}
+
+  	$(document).on("scroll", function () {
+  	  if($(window).scrollTop() === 0)
+  	  	$("header").removeClass("fixed");
+  	  else
+  	  	$("header").attr("class", "fixed");
+  	});
+  </script>
+</body>
+</html>
